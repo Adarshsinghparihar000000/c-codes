@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int a,b;
+    char op;//op--operater
+    printf("enter the values of operator a and b;\n");
+    scanf("%c%d%d",&op,&a,&b);
+   
+    switch(op){
+        case '+':printf("sum of a and b: %d\n",a+b);
+                 break;
+        case '-':printf("the difference between a and b is:%d\n",a-b);
+                 break;
+        case '*':printf("the multiplication of a and b is:%d\n",a*b);
+                 break;
+        case '/':printf("the division of a and b is :%d\n",a/b);
+                 break;
+        case '%':printf("the remainder after division of a and b is :%d\n",a%b);
+                break;
+        default :printf("the entered operator is invalid");
+        }
+        return 0;
+}

@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int m1,m2,m3,m4,m5,p;
+    printf("enter the marks of 5 subejcts to find its percentage and grade");
+    scanf("%d%d%d%d%d",&m1,&m2,&m3,&m4,&m5);
+    p=(100*(m1+m2+m3+m4+m5)/500);
+    printf("%d is the percentage obtained\n",p);
+    if(p>=90 &&p<=100){
+        printf("grade is A");
+    }
+    else if(p>=80 &&p<90){
+        printf("grade is B");
+    }
+    else if(p>=60 &&p<80){
+        printf("grade is C");
+    }
+    else if(p<60){
+        printf("grade is D");
+    }
+return 0;
+    
+}

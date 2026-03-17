@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int x,y,z;
+    printf("enter the three sides if a traingle:\n");
+    scanf("%d%d%d",&x,&y,&z);
+    if(x==y&&y==z&&z==x){
+        printf("the traingle is equilateral");
+    }
+    else if((x==y)||(y==z)||(z==x)){
+        printf("the traingle is isosceles");
+    }
+    else if(x!=y&&y!=z&&z!=x){
+        printf("the traingle is scalene");
+    }
+    return 0;
+}

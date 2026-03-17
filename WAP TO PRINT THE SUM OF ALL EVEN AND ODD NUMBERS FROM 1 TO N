@@ -1,0 +1,18 @@
+ #include<stdio.h>
+ int main(){
+     int n;
+     printf("enter a number to find the sum of even and odd number from 1 to n:\n");
+     scanf("%d",&n);
+     int sume=0;
+     for(int i=0;i<=n;i=i+2){
+         sume = sume + i;
+     }
+     printf("the sum of all even numbers upto n is %d\n",sume);
+     int sumo=0;
+     for(int i = 1;i<=n;i=i+2){
+         sumo = sumo + i ;
+     }
+     printf("the sum of all odd numbers upto n is %d\n",sumo);
+     return 0;
+     
+ }

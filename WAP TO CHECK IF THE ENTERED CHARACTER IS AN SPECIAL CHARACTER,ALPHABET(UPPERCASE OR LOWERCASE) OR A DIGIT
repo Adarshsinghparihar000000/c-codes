@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("enter a character to check if it is alphabet(uppercase or lowercase),special character or digits :\n");
+    scanf("%c",&ch);
+    if((ch>=65&& ch<=90)||(ch>=97&& ch<=122)){
+        printf("entered character is an alphabet\n");
+        if(ch>=65&& ch<=90){
+            printf("and the entered character is a uppercase character");
+        }
+        else if(ch>=97&& ch<=122){
+            printf("entered character is a lowercase character");
+        }
+    }
+    else if(ch>=48 &&ch<=57 ){
+        printf("entered character is a digit");
+    }
+    else if((ch>=33&&ch<=47)||(ch>=58&&ch<=64)||(ch>=91&&ch<=96)||(ch>=123&&ch<=127)){
+        printf("entered character is a special character");
+    }
+    else printf("invalid input");
+    return 0;
+}

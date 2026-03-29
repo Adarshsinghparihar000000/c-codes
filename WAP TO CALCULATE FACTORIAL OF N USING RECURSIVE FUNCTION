@@ -4,14 +4,14 @@ int factorial(int n);
 
 int main(){
     int n;
-    printf("enter a number n to calculate factorial of n:\n");
+    printf("enter a number n to print its factorial\n");
     scanf("%d",&n);
-    printf("THE FACTORIAL OF %d : %d",n,factorial(n));
+    printf("the factorial of %d :%d",n,factorial(n));
     return 0;
 }
 
 int factorial(int n){
-    if(n==1){
+    if(n==0){
         return 1;
     }
     int factorialNm1=factorial(n-1);

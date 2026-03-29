@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int fibonacci(int n);
+
+int main(){
+    int n;
+    printf("enter a number n to print its fibonacci number\n");
+    scanf("%d",&n);
+    printf("the fibonacci of %d :%d",n,fibonacci(n));
+    return 0;
+}
+
+int fibonacci(int n){
+    if(n==0){
+        return 0;
+    }
+    if(n==1){
+        return 1; 
+    }
+    int fibonacciNm1=fibonacci(n-1);
+    int fibonacciNm2=fibonacci(n-2);
+    int fibonacciN  =fibonacciNm1+fibonacciNm2;
+    return fibonacciN;
+}
